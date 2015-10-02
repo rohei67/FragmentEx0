@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+              android:baselineAligned="false">
     <fragment 
         class="jp.hw.and.fragment0.FragmentEx$TitlesFragment"
         android:id="@+id/titles" 
@@ -10,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent" />
     <FrameLayout 
-        android:id="@+id/details" 
+        android:id="@+id/detail"
         android:layout_weight="3"
         android:layout_width="0px"
         android:layout_height="match_parent" />

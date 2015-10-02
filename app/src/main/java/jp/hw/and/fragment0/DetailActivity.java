@@ -16,37 +16,36 @@ public class DetailActivity extends Activity {
 		super.onCreate(bundle);
 		createLayout();
 		int index = fetchIndex();
-		replaceFragment(index);
-	}
-
-	private void replaceFragment(int index) {
-		DetailsFragment fragment = DetailsFragment.newInstance(index);
-		FragmentTransaction ft = getFragmentManager().beginTransaction();
-		ft.replace(R.id.details, fragment);
-		ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-		ft.commit();
-	}
-
-	private int fetchIndex() {
-		Bundle extras = getIntent().getExtras();
-		if (extras != null)
-			return extras.getInt("index");
-		return 0;
+		setDetailFragment(index);
 	}
 
 	private void createLayout() {
 		FrameLayout layout = new FrameLayout(this);
-		layout.setId(R.id.details);
+		layout.setId(R.id.detail);
 		setContentView(layout);
 	}
 
-	public static class DetailsFragment extends Fragment
-	{
-		public static DetailsFragment newInstance(int index) {
+	private int fetchIndex() {
+		Bundle extras = getIntent().getExtras();
+		if (extras == null)
+			return 0;
+		return extras.getInt("index");
+	}
+
+	private void setDetailFragment(int index) {
+		DetailFragment fragment = DetailFragment.newInstance(index);
+		FragmentTransaction ft = getFragmentManager().beginTransaction();
+		ft.replace(R.id.detail, fragment);
+		ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+		ft.commit();
+	}
+
+	public static class DetailFragment extends Fragment {
+		public static DetailFragment newInstance(int index) {
 			Bundle bundle = new Bundle();
 			bundle.putInt("index", index);
 
-			DetailsFragment fragment = new DetailsFragment();
+			DetailFragment fragment = new DetailFragment();
 			fragment.setArguments(bundle);
 			return fragment;
 		}
