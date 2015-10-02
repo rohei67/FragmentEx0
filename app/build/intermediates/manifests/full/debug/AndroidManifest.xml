@@ -12,7 +12,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name="jp.hw.and.frament0.FragmentEx"
+            android:name="jp.hw.and.fragment0.FragmentEx"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="jp.hw.and.frament0.DetailActivity"
+            android:name="jp.hw.and.fragment0.DetailActivity"
             android:label="DetailActivity" >
         </activity>
     </application>

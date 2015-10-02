@@ -1,4 +1,4 @@
-package jp.hw.and.frament0;
+package jp.hw.and.fragment0;
 
 import android.app.Activity;
 import android.app.Fragment;

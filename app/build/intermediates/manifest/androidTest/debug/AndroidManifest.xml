@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="jp.hw.and.frament0"
+                     android:targetPackage="jp.hw.and.fragment0"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for jp.hw.and.frament0"/>
+                     android:label="Tests for jp.hw.and.fragment0"/>
 </manifest>

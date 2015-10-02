@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package jp.hw.and.frament0;
+package jp.hw.and.fragment0;
 
 public final class R {
     public static final class attr {

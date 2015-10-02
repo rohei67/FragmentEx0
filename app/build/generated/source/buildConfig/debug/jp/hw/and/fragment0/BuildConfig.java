@@ -1,7 +1,7 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package jp.hw.and.frament0;
+package jp.hw.and.fragment0;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");

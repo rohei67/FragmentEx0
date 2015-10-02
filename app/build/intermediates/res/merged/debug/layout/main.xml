@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <fragment 
-        class="jp.hw.and.frament0.FragmentEx$TitlesFragment"
+        class="jp.hw.and.fragment0.FragmentEx$TitlesFragment"
         android:id="@+id/titles" 
         android:layout_weight="1"
-        android:layout_width="50px"
+        android:layout_width="0dp"
         android:layout_height="match_parent" />
 </LinearLayout><!-- From: file:/C:/Users/0701AND/Desktop/prgData/ListViewSamples/FragmentEx0/app/src/main/res/layout/main.xml -->
